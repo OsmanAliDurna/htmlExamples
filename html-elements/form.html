@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Forms</title>
+</head>
+<body>
+    <form action="result.html" method="GET">
+            <div>
+                <label> Name: <input type="text" name="name" placeholder="Enter Your Name" > </label>
+            </div>
+            <div>
+                <label for="surname"> Surname: </label>
+                <input type="text" id="surname" name="surname" placeholder="Enter Your Surname"  size="10" maxlength="8">
+            </div>
+            <div>
+                <label> Password: <input type="password" name="password"> </label>
+            </div>
+            <div>
+                <label> Gender: </label> <br>
+                <label> Male<input type="radio" name="gender" value="male"></label>
+                <label> Female<input type="radio" name="gender" value="female" checked></label>
+            </div>
+            <div>
+                <label> My Vehicles: </label> <br>
+                <input type="checkbox" name="vehicle" id="vec-1" value="bicycle">
+                <label for="vec-1"> Bicycle </label>
+                <input type="checkbox" name="vehicle" id="vec-2" value="car">
+                <label for="vec-2"> Car </label>
+                <input type="checkbox" name="vehicle" id="vec-3" value="yatch">
+                <label for="vec-3"> Yatch </label>
+            </div>
+            <div>
+                <label for="age"> Age: </label>
+                <input id="age" type="number" min="0" max="150" step="2" value="35">
+            </div>
+            <div>
+                <label for="qsearch"> Search On The Website</label>
+                <input id="qsearch" name="search" type="search" placeholder="Search here">
+            </div>
+            <div>
+                <label for="favcolor"> Select Your Fav Color</label>
+                <input id="favcolor" type="color" name="favorite-color" value ="#0000ff">
+            </div>
+            <div>
+                <label for="b-day"> Birthday</label>
+                <input id="b-day" type="date" name="Birthday" min="1900-01-01" max="2021-03-03">
+            </div>
+            <div>
+                <label for="file"> Upload your file</label>
+                <input id="file" type="file" name="uploaded-file">
+            </div>
+            <div>
+                <label for="phone"> Upload your file</label>
+                <input id="phone" type="tel" name="phone-number" pattern="[0-9]{3}[0-9]{2}[0-9]{3}">
+            </div>
+            
+            <br><br>
+            <input type="submit" value="send it to the moon">
+            <input type="reset" value="Reset All Page" accesskey="r">
+    </form>
+</body>
+</html> 
